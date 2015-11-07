@@ -16,8 +16,8 @@ namespace dashing.net.jobs
         private readonly Random _rand;
         private readonly string[] _buzzwords =
             {
-                "Paradigm shift", "Leverage", "Pivoting", "Turn-key", "Streamlininess",
-                "Exit Strategy", "Synergy", "Enterprise", "Web 2.0"
+                "Ice", "Wind", "Flooding", "Rain", "Vehicle Accident",
+                "Construction Accident", "Animals", "Tornado", "Hurricane"
             };
 
         private Dictionary<string, int> _buzzwordCounts = new Dictionary<string, int>();

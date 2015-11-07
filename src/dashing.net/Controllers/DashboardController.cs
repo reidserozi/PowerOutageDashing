@@ -11,12 +11,12 @@ namespace dashing.net.Controllers
     {
         public ActionResult Sampletv()
         {
-            return View();
+            return View("OutagesDashboard");
         }
 
         public ActionResult Sample()
         {
-            return View();
+            return View("OutagesDashboard");
         }
     }
 }

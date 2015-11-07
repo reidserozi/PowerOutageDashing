@@ -1,0 +1,51 @@
+﻿<div class="gridster">
+    <ul>
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+            <div data-view="Clock"></div>
+            <i class="icon-time icon-background"></i>
+        </li>
+
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+            <div data-view="Image" data-image="/logo.png"></div>
+        </li>
+
+        <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+            <div data-id="welcome" data-view="Text" data-title="North Carolina Power Outages" data-text="Dashboard to light the dark" data-moreinfo=""></div>
+        </li>
+
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+            <div data-id="outages" data-view="Meter" data-title="Customers" data-min="0" data-max="100"></div>
+        </li>
+
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+            <div data-id="population" data-view="Meter" data-moreinfo="" data-title="Population Impact" data-min="0" data-max="5000"></div>
+        </li>
+
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+            <div data-id="causes" data-view="List" data-unordered="true" data-title="Causes" data-moreinfo="# of times said around the office"></div>
+        </li>
+
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+            <div data-id="outages" data-view="Meter" data-title="Outages" style="background-color:#96bf48;" data-min="0" data-max="100"></div>
+        </li>
+
+        <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+            <div data-id="convergence" data-view="Graph" data-title="Outages Over Time" style="background-color:#47bbb3;" data-moreinfo="poop" ></div>
+        </li>
+
+        <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+            <div data-id="welcome" data-view="Text" data-title="Tweets About Power Outages" style="background-color:#ff9618;"  data-text="#hack2help" data-moreinfo=""></div>
+            <i class="icon-twitter icon-background"></i>
+        </li>
+
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+            // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+        Dashing.gridsterLayout('[{"col":2,"row":1},{"col":1,"row":1},{"col":3,"row":1},{"col":2,"row":2},{"col":3,"row":2},{"col":1,"row":2},{"col":5,"row":1},{"col":4,"row":2},{"col":2,"row":3}]');
+        Dashing.widget_base_dimensions = [370, 340];
+        Dashing.numColumns = 5;
+    });
+</script>
